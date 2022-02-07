@@ -1,0 +1,22 @@
+<div class="w-50 mx-auto" style="margin-top: 80px;">
+    <form id="regForm">
+        <div class="mb-3">
+            <label for="regUsername" class="form-label">Username</label>
+            <input type="text" class="form-control" id="regUsername" required>
+        </div>
+        <div class="mb-3">
+            <label for="regPass" class="form-label">Password</label>
+            <input type="password" class="form-control" id="regPass" required>
+        </div>
+        <div class="mb-3">
+            <label for="confirm" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="confirm" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign me up!</button>
+    </form>
+    <a href="#login" class="mt-4 me-auto" id="linkToLogin">Already have an account? Sign in here!</a>
+    <div class="alert alert-danger" style="margin-top: 40px;" role="alert"></div>
+    <div class="alert alert-success" style="margin-top: 40px;" role="alert">
+        Registration successfull! Please <a href="#login" class="alert-link">sign in</a> to continue!
+    </div>
+</div>

@@ -1,0 +1,13 @@
+{{#each this}}
+  <div class="card" style="width: 18rem;">
+    <img src="{{flags.png}}" class="card-img-top" height="211" alt="National Flag">
+    <div class="card-body">
+      <h5 class="card-title">{{name.common}}</h5>
+      <p class="card-text">{{capital}}</p>
+      <div class="buttons">
+        <button class="btn btn-primary details" style="font-size: 14px;">Check forecast</button>
+        <button class="btn btn-primary follow" style="font-size: 14px;">{{#if (isFav name.common)}}Unfollow{{else}}Add to Favourites{{/if}}</button>
+      </div>
+    </div>
+  </div>
+{{/each}}
